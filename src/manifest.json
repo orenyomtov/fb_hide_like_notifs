@@ -3,7 +3,7 @@
 
   "name": "Hide FB Notifications",
   "description": "This extension hides notifications on Facebook.",
-  "version": "1.14",
+  "version": "2",
 
   "icons": {
     "48": "icon_on_48.png",
@@ -18,7 +18,8 @@
   "content_scripts": [
     {
       "matches": ["https://www.facebook.com/*"],
-      "css": ["fb_hide_notifs_injection.css"]
+      "css": ["fb_hide_notifs_injection.css"],
+      "js": ["fb_hide_notifs_injection.js"]
     }
   ],
 
