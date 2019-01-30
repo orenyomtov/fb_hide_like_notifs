@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Hide 'Like' Notifications",
-  "description": "This extension hides 'like' notifications on Facebook.",
+  "name": "Hide FB Notifications",
+  "description": "This extension hides notifications on Facebook.",
   "version": "1.14",
 
   "icons": {
@@ -11,15 +11,14 @@
   },
 
   "page_action": {
-    "default_title": "Hide 'Like' Notifs",
+    "default_title": "Hide FB Notifs",
     "default_icon": "icon_on_48.png"
   },
 
   "content_scripts": [
     {
       "matches": ["https://www.facebook.com/*"],
-      "css": ["fb_hide_like_notifs_injection.css"],
-      "js": ["fb_hide_like_notifs_injection.js"]
+      "css": ["fb_hide_notifs_injection.css"]
     }
   ],
 
